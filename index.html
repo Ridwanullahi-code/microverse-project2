@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <section>
-        <div class="">freeCodeCamp Survey Form</div>
-        <div class="">Thank you for taking the time to help us improve the platform</div>
+    <section class="welcome">
+        <h2>freeCodeCamp Survey Form</h2><br>
+        <p>Thank you for taking the time to help us improve the platform</p><br>
     </section>
     <section>
         <form>
-            <div class="name">
+            
+            <div class="input-form">
                 <label for="name">Name</label><br />
-                <input type="text" id="name" name="name" /><br />
+                <input type="text" id="name" name="name" placeholder="Enter your name"/><br />
             </div>
-            <div class="email">
+            <div class="input-form">
                 <label for="email-input">Email</label><br />
-                <input id="email-input" type="email" name="email-inputted" />
+                <input id="email-input" type="email" name="email-inputted" placeholder="Enter your Email">
             </div>
-            <div class="age">
+            <div class="input-form">
                 <label>Age</label><br />
-                <input type="number" name="num" />
+                <input type="number" name="num" placeholder="Age">
             </div>
-            <div>
+            <div class="dropdown">
                 <h3>Which option best describes your current role?</h3>
-                <select id="dropdown" name="role" class="form-control" required="">
+                <select id="dropdown" name="role" class="form-control" required="" aria-placeholder="Select current role">
                     <option disabled="" selected="" value="">Select current role
                     </option>
                     <option value="student">Student</option>
@@ -41,32 +42,32 @@
                 </select>
 
             </div>
-            <div>
+            <div class="radio">
                 <h3>Would you recommend freeCodeCamp to a friend?</h3>
                 <label>
-            <input
-                name="user-recommend"
-                value="definitely"
-                type="radio"
-                class="input-radio"
-                checked=""
-            />Definitely</label></div>
-            <label>
-            <input
-                name="user-recommend"
-                value="maybe"
-                type="radio"
-                class="input-radio"
-            />Maybe</label><br>
-            <label><input
-                name="user-recommend"
-                value="not-sure"
-                type="radio"
-                class="input-radio"
-            />Not sure</label>
+                <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked=""
+                >Definitely</label><br>
+                <label>
+                <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                >Maybe</label><br>
+                <label><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                >Not sure</label>
 
             </div>
-            <div>
+            <div class="favorite">
                 <h3>What is your favorite feature of freeCodeCamp?</h3>
                 <select id="most-like" name="mostLike" class="form-control" required="">
                     <option disabled="" selected="" value="">Select an option</option>
@@ -76,7 +77,7 @@
                     <option value="openSource">Open Source</option>
                 </select>
             </div>
-            <div>
+            <div class="recommend">
                 <h3>What would you like to see improved?
                     <span class="clue">(Check all that apply)</span>
                 </h3>
@@ -92,15 +93,15 @@
                 <label><input name="prefer" value="Forum" type="checkbox" class="input-checkbox">Forum</label><br>
                 <label><input name="prefer" value="Additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label><br>
             </div>
-            <div>
+            <div class="comment">
                 <h3>Any comments or suggestions?</h3>
-                <textarea id="comments" class="input-textarea" name="comment" rows="10" cols="100"></textarea>
+                <textarea id="comments" class="input-textarea" name="comment" rows="10" cols="90"></textarea>
             </div>
-            <div>
+            <div class="submit">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>
     </section>
+    <script  src="./js/index.js"></script>
 </body>
-
 </html>
